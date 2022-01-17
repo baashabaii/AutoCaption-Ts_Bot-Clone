@@ -23,15 +23,15 @@ async def editing(bot, message):
       except:
          caption_text = ""
          pass 
+      if caption_text.startswith('@'):
+          caption_text = ' '.join(caption_text.split()[1:])
+          caption_text = caption_text.strip().strip('-').strip()
       if (message.document or message.video or message.audio): 
           if message.caption:                        
              file_caption = f"**{message.caption}**"                
           else:
              file_caption = ""        
-      if file_caption.startswith('@'):
-          file_caption = ' '.join(file_caption.split()[1:])
-          file_caption = file_caption.strip().strip('-').strip()
-                                                 
+ 
       try:
           if caption_position == "top":
              await bot.edit_message_caption(
