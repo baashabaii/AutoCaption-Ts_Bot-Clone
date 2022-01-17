@@ -29,8 +29,8 @@ async def editing(bot, message):
           else:
              file_caption = ""        
        if file_caption.startswith('@MSPmoviesOffl'):
-            file_caption = ' '.join(file_caption.split()[1:])
-            file_caption = file_caption.strip().strip('-').strip()
+           file_caption = ' '.join(file_caption.split()[1:])
+           file_caption = file_caption.strip().strip('-').strip()
                                                  
       try:
           if caption_position == "top":
