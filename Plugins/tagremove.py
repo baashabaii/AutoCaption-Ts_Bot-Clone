@@ -5,7 +5,7 @@ from pyrogram.errors import FloodWait
 bot = Client(
     "Remove FwdTag",
     bot_token = os.environ["TG_BOT_TOKEN"],
-    api_id = int(os.environ["API_ID"]),
+    api_id = int(os.environ["APP_ID"]),
     api_hash = os.environ["API_HASH"]
 )
 
