@@ -28,7 +28,7 @@ async def editing(bot, message):
              file_caption = f"**{message.caption}**"                
           else:
              file_caption = ""           
-      file_caption = file_caption.replace("@MSPmoviesOffl ", "")
+      file_caption = file_caption.replace("@TamilPrime_LinkZz ", "")
       file_caption = file_caption.replace(".mkv", "")
       file_caption = file_caption.replace("HEVC", "#HEVC")
       file_caption = file_caption.replace("Sample video.", "#SampleVideo")
